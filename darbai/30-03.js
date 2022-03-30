@@ -62,7 +62,7 @@ let dienuSkaicius = function(month,year) {
 // Pats neparasiau, tik idejau savo skaičius, reiketu paaiškinimo kaip veikia//
 
 // 8 uzduotis //
-const k3 = 2;
+const k3 = 6;
 if (k3 % 2 === 0) {
     console.log('Kambarį tvarkys jaunėlis');
 } else {
@@ -71,7 +71,7 @@ if (k3 % 2 === 0) {
 
 // 9 uzduotis //
 const olimpic = 1896;
-const m = 2005
+const m = 2000
 const kelinti = (m - olimpic)/4 + 1;
 if (Number.isInteger(kelinti)) {
     console.log('m =', kelinti);
@@ -79,19 +79,26 @@ if (Number.isInteger(kelinti)) {
     console.log('Metai neolimpiniai');
    }
 
+   //ARBA 9 uzd//
+   if (m % 4 ===0) {
+    console.log('m =', kelinti);
+} else {
+    console.log('Metai neolimpiniai');
+   }
+
 // 10 uzduotis //
-const v1 = 8; //laikrodzio valandos
-const m1 = 29; // laikrodzio minutes
-const m2 = 23; // keliones laikas
-const v = 9; // pamokos val
-const mm = 5; // pamokos min
+const v1 = 8;   //laikrodzio valandos
+const m1 = 29;  // laikrodzio minutes
+const m2 = 23;  // keliones laikas
+const v = 9;    // pamokos val
+const mm = 5;   // pamokos min
 
-const v1m = 8*60;
+const v1m = 8*60; 
 const v2m = 9*60;
-const laikrodzioMin = v1m + m1;
-const pamokosMin = v2m + mm;
+const laikrodzioMin = v1m + m1; //509
+const pamokosMin = v2m + mm; //545
 
-if (pamokosMin - laikrodzioMin < 0) {
+if (pamokosMin - laikrodzioMin < m2) {
     console.log('Petras į pamoką pavėluos');
 } else {
     console.log('Petras į pamoką nepavėluos');
