@@ -1,17 +1,22 @@
 // 1 uzduotis //
-const n1 = 20
+const n1 = -2
 
 if (n1 > 0) {
     console.log('Skaičius geras.');
-} else {
+} else if (n1 < 0) {
     console.log('Skaičius blogas');
    }
 
 // 2 uzduotis //
-const n2 = 2;
+const n2 = 3;
 if (n2 === 2) {
-    console.log('Palaukite')
-} 
+    console.log('palaukite');
+} else if (n2 === 1) {
+    console.log('eikite');
+} else if (n2 === 3) {
+    console.log('stovekite');
+   }
+
 
 //3 uzduotis //
 const d = 3;
@@ -25,11 +30,13 @@ if (k / n3 <= d) {
    }
 
 // 4 uzduotis //
-let a = 10;
-let b = 2;
-a -= 1;
-b += 1;
-console.log((a), (b));
+let a = 2;
+let b = 10;
+if (a > b) {
+    console.log(a -= 1, b += 1);
+} else if (a < b) {
+    console.log(a += 1, b -=1)
+}
 
 // 5 uzduotis //
 const p = 20;
@@ -49,17 +56,29 @@ if (Number.isInteger(n4 / degt)) {
    }
 
 // 7 uzduotis //
-const metai = 2022
-const n5 = 2
-let dienuSkaicius = function(month,year) {
+/*
+    const metai = 2022
+    const n5 = 6
+ let dienuSkaicius = function(month,year) {
     // Here January is 1 based
     //Day 0 is the last day in the previous month
    return new Date(year, month, 0).getDate();
   // Here January is 0 based
   // return new Date(year, month+1, 0).getDate();
   };
-  console.log('d =', dienuSkaicius (n5, metai));
-// Pats neparasiau, tik idejau savo skaičius, reiketu paaiškinimo kaip veikia//
+  console.log('d =', dienuSkaicius (n5, metai)); */
+
+  const menuo = 20;
+
+  if (menuo === 1 || menuo === 3 || menuo === 5 || menuo === 7 || menuo === 8 || menuo === 10 | menuo === 12) {
+      console.log('d = 31'); //kodel reikia prie kiekvieno skaiciaus parasyti menuo, neuztenka tisiog OR || //
+  } else if (menuo === 2) {
+      console.log('d = 28');
+  } else if (menuo === 4 || menuo === 6 || menuo === 9 || menuo === 11) {
+      console.log('d = 30');
+  } else {
+      console.log('Neteisyngas menesio nr.');
+  }
 
 // 8 uzduotis //
 const k3 = 6;
