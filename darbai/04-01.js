@@ -1,6 +1,7 @@
 //FUNKCIJOS
 console.log('FUNKCIJOS');
 // 1 uzd //
+console.log('-----------------');
 function sum(a, b) {
     return `${a} + ${b} = ${a+b}`
 }
@@ -8,7 +9,7 @@ const c = sum(7, -45);
 console.log(c);
 
 // 2 uzd //
-
+console.log('-----------------');
 function palyginti(a, b) {
     if (a > b) { 
         return 'pirmas didesnis.'   
@@ -27,9 +28,9 @@ function palyginti(a, b) {
     function palyginimas (skaiciai) {
         if (skaiciai[0] > skaiciai[1]) { 
             return 'pirmas didesnis.'   
-        } else if (skaiciai[0] < skaiciai[1]) {
+        } if (skaiciai[0] < skaiciai[1]) {
             return 'antras didesnis'
-        } else if (skaiciai[0] === skaiciai[1]) {
+        } if (skaiciai[0] === skaiciai[1]) {
             return 'lygus'
         }}
         const result1 = palyginimas(pirmieji)
@@ -40,6 +41,7 @@ function palyginti(a, b) {
         console.log(result3);
 
         // 3 uzd //
+        console.log('-----------------');
 const metai1 = 2019;
 const metai2 = 1856;
 const metai3 = 789;
@@ -60,6 +62,7 @@ const arKeliamieji4 = keliamieji(metai4);
 console.log(arKeliamieji4);
 
 // 4 uzd //
+console.log('-----------------');
 const skaicius1 = 2;
 const skaicius2 = 3;
 const skaicius3 = 5;
@@ -75,6 +78,7 @@ const resultatasKvadratu3 = kvadratu(skaicius3);
 console.log(resultatasKvadratu3);
 
 // 5 uzd //
+console.log('-----------------');
 const sk1 = 4;
 const sk2 = -10;
 let suma = 0;
@@ -94,10 +98,12 @@ const second = skaicioSuma(sk2);
 console.log('skaicio suma =', second);
 
 // 6 uzd //
+console.log('-----------------');
 
 console.log('6 uzduotis NEPERPRATAU KAIP IŠSKAIČIUOTI');
 
 // 7 uzd //
+console.log('-----------------');
 function simboliuKiekis(n) {
     return `${n} turi ${n.length} simboliu`
 }
@@ -107,6 +113,7 @@ const kiek2 = simboliuKiekis('namas')
 console.log(kiek2);
 
 // 8 uzd //
+console.log('-----------------');
 const number1 = [8, 6, 8, 4, 9, 2, 5, 7, 5, 5];
 const number2 = [5, 4, 3, 2, 1, 0, 6, 7, 8, 9];
 function phone(n) {
@@ -117,7 +124,9 @@ console.log(phoneFormat1);
 const phoneFormat2 = phone(number2);
 console.log(phoneFormat2);
 
-const tekstas10 = 'labasas'
+// 9uzd //
+console.log('-----------------');
+const tekstas10 = 'laba'
 const tekstas11 = 'diena'
 function kurisIlgesnis(a, b) {
     if (a.length > b.length) {
@@ -134,3 +143,17 @@ const palyginom = kurisIlgesnis(tekstas10, tekstas11)
 console.log(palyginom);
 
 // 10 uzd //
+console.log('-----------------');
+const tekstas20 = 'Parašyti funkciją, kuri priimtų vieną kintamąjį - tekstą. Suskaičiuoti, kiek tekste yra "a" raidžių. dAr pridejau "A"';
+
+function tiekRaidziu(m) {
+    let suma = 0;
+  for (let i = 0; i < m.length; i++) {
+    abc = (m[i] === "A") + (m[i] === "a") ;
+    suma +=abc;
+      
+  }
+  return suma
+}
+const raidesTekste = tiekRaidziu(tekstas20);
+console.log('raidziu "a" tekste yra', raidesTekste, 'vnt.');
