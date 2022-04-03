@@ -158,31 +158,3 @@ function tiekRaidziu(m) {
 const raidesTekste = tiekRaidziu(tekstas20);
 console.log('raidziu "a" tekste yra', raidesTekste, 'vnt.');
 
-// FOR //
-console.log('-----------------');
-console.log('FOR');
-console.log('-----------------');
-// 1 uzd //
-const zodis = 'Labas'
-for (let i = 0; i < 5; i++) {
-    let result = zodis;
-    result +=i;
-    console.log(zodis);
-}
-// 2 uzd //
-console.log('-----------------');
-for (let i = 0; i < 5; i++) {
-    let result = 0;
-    result +=i
-    console.log(result);
-    
-}
-// 3 uzd //
-console.log('-----------------');
-
-for (let i = 0; i < 5; i++) {
-    let resultatas = 0;
-    resultatas +=i*10;
-    console.log(resultatas);
-    
-}
