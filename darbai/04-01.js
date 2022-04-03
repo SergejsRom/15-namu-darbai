@@ -13,9 +13,9 @@ console.log('-----------------');
 function palyginti(a, b) {
     if (a > b) { 
         return 'pirmas didesnis.'   
-    } else if (a < b) {
+    }if (a < b) {
         return 'antras didesnis'
-    } else if (a === b) {
+    }if (a === b) {
         return 'lygus'
     }}
     const rezultatas = palyginti(5, 9)
@@ -100,7 +100,7 @@ console.log('skaicio suma =', second);
 // 6 uzd //
 console.log('-----------------');
 
-console.log('6 uzduotis NEPERPRATAU KAIP IŠSKAIČIUOTI');
+console.log('6 uzduotis');
 
 // 7 uzd //
 console.log('-----------------');
@@ -144,7 +144,7 @@ console.log(palyginom);
 
 // 10 uzd //
 console.log('-----------------');
-const tekstas20 = 'Parašyti funkciją, kuri priimtų vieną kintamąjį - tekstą. Suskaičiuoti, kiek tekste yra "a" raidžių. dAr pridejau "A"';
+const tekstas20 = 'Parašyti funkciją, kuri priimtų vieną kintamąjį - tekstą. Suskaičiuoti, kiek tekste yra "a" raidžių. dAr pridejau "A" Aa';
 
 function tiekRaidziu(m) {
     let suma = 0;
@@ -157,3 +157,32 @@ function tiekRaidziu(m) {
 }
 const raidesTekste = tiekRaidziu(tekstas20);
 console.log('raidziu "a" tekste yra', raidesTekste, 'vnt.');
+
+// FOR //
+console.log('-----------------');
+console.log('FOR');
+console.log('-----------------');
+// 1 uzd //
+const zodis = 'Labas'
+for (let i = 0; i < 5; i++) {
+    let result = zodis;
+    result +=i;
+    console.log(zodis);
+}
+// 2 uzd //
+console.log('-----------------');
+for (let i = 0; i < 5; i++) {
+    let result = 0;
+    result +=i
+    console.log(result);
+    
+}
+// 3 uzd //
+console.log('-----------------');
+
+for (let i = 0; i < 5; i++) {
+    let resultatas = 0;
+    resultatas +=i*10;
+    console.log(resultatas);
+    
+}
