@@ -1,4 +1,5 @@
 //FUNKCIJOS
+console.log('FUNKCIJOS');
 // 1 uzd //
 function sum(a, b) {
     return `${a} + ${b} = ${a+b}`
@@ -74,4 +75,62 @@ const resultatasKvadratu3 = kvadratu(skaicius3);
 console.log(resultatasKvadratu3);
 
 // 5 uzd //
-const sk1 = 5;
+const sk1 = 4;
+const sk2 = -10;
+let suma = 0;
+function skaicioSuma(n) {
+    if (n <=1) {
+        return 'neteisyngas skaicius'
+    }
+    for (let i = 0; i <=n; i++) {
+        suma += i;
+    }
+    return suma;
+}
+
+const first = skaicioSuma(sk1);
+console.log('skaicio suma =', first);
+const second = skaicioSuma(sk2);
+console.log('skaicio suma =', second);
+
+// 6 uzd //
+
+console.log('6 uzduotis NEPERPRATAU KAIP IŠSKAIČIUOTI');
+
+// 7 uzd //
+function simboliuKiekis(n) {
+    return `${n} turi ${n.length} simboliu`
+}
+const kiek = simboliuKiekis('automobilis')
+console.log(kiek);
+const kiek2 = simboliuKiekis('namas')
+console.log(kiek2);
+
+// 8 uzd //
+const number1 = [8, 6, 8, 4, 9, 2, 5, 7, 5, 5];
+const number2 = [5, 4, 3, 2, 1, 0, 6, 7, 8, 9];
+function phone(n) {
+    return `(${n[0]}${n[1]}${n[2]}) ${n[3]}${n[4]}${n[5]}-${n[6]}${n[7]}${n[8]}${n[9]}`
+}
+const phoneFormat1 = phone(number1);
+console.log(phoneFormat1);
+const phoneFormat2 = phone(number2);
+console.log(phoneFormat2);
+
+const tekstas10 = 'labasas'
+const tekstas11 = 'diena'
+function kurisIlgesnis(a, b) {
+    if (a.length > b.length) {
+        return 'pirmas ilgesnis'
+    }
+    if (a.length < b.length) {
+        return 'antras ilgesnis'
+    }
+    if (a.length === b.length) {
+        return 'lygus'
+    }
+}
+const palyginom = kurisIlgesnis(tekstas10, tekstas11)
+console.log(palyginom);
+
+// 10 uzd //
