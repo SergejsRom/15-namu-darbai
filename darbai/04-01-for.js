@@ -94,8 +94,8 @@ for (let i = 1; i <= nMetai; i++) {
 // 10 uzd //
 console.log('-----------------');
 
-//for (let i = 1; i < 2022; i++) {
-   // { if (i % 4 === 0) 
-           // console.log(`keliamieji metai: ${i}`);
-       // }
-   // } 
+for (let i = 1; i <= 2022; i++) {
+    { if (i % 4 === 0) 
+            console.log(`keliamieji metai: ${i}`);
+        }
+    } 
