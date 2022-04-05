@@ -56,8 +56,8 @@ for (let i = 0; i <5; i++) {
     console.log(result)
 }
 for (let i = 0; i <5; i++) {
-    let i = (Math.floor(Math.random() * (10 - 0 + 1)) + 0) ; // (Math.floor(Math.random() * (max - min + 1)) + min //
-    console.log(i)
+     // (Math.floor(Math.random() * (max - min + 1)) + min //
+    console.log(Math.floor(Math.random() * (10 - 0 + 1)) + 0)
 }
 
 // 6 uzd //
@@ -77,8 +77,8 @@ for (let a = 1; a <= 10; a++) {
       //console.log(a + "*" + f + "=" +(a*f))
 }
 }
+const skaicius = 5;
 for (let i = 1; i <= 10; i++) {
-    const skaicius = 5;
     console.log(`${i} * ${skaicius} = ${i * skaicius}`)
 }
 
@@ -94,14 +94,20 @@ for (let a = 1; a <= n; a++) {
 // 9 uzd //
 console.log('-----------------');
 const palukanos = 0.02;
-const indelis = 100;
-const nMetai = 8;
+let indelis = 100;
+const nMetai = 5;
 
-for (let i = 1; i <= nMetai; i++) {
-   let pal = 0;
-   pal = (indelis * palukanos);
-        console.log(`metai: ${i}, palukanos: ${pal}, indelis: ${indelis + pal[i]} ` );
-}
+
+    for (let i = 1; i <= nMetai; i++) {
+
+        let pal = (indelis * palukanos);
+     
+        indelis += pal;
+     
+             console.log(`metai: ${i}, palukanos: ${pal.toFixed(2)}, indelis: ${indelis.toFixed(2)} ` );
+     
+     }
+
 
 // 10 uzd //
 console.log('-----------------');
