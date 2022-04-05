@@ -98,9 +98,18 @@ const second = skaicioSuma(sk2);
 console.log('skaicio suma =', second);
 
 // 6 uzd //
-console.log('-----------------');
-
-console.log('6 uzduotis');
+console.log('6 UZD');
+function dalijasi(skaicius) {
+    let ska = 0;
+    for (let i = 2; i < skaicius; i++) {
+        if (skaicius % i === 0) {
+            ska++;
+        }
+        
+    }
+    return ska
+}
+console.log(dalijasi(24));
 
 // 7 uzd //
 console.log('-----------------');
