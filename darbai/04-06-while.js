@@ -28,7 +28,8 @@ console.log('---------3 uzd---------')
 
 
 console.log('---------4 uzd---------')
-let number5 = 0
+let number5 = 0;
+let ratai = 0;
 while (isFinite) {
   number5 = (Math.floor(Math.random() * (10 - 1 + 1)) + 1);
   console.log(number5)
@@ -36,16 +37,18 @@ while (isFinite) {
     break;
   }
 }
-console.log(number5)
+console.log('paskutinis', number5)
 
 console.log('---------5 uzd---------')
-let number57 = 0
+let number57 = 0;
+let ciklas = 0;
 while (isFinite) {
   number57 = (Math.floor(Math.random() * (10 - 1 + 1)) + 1);
-  console.log(number57)
+  console.log(number57);
+  ciklas++
   if (number57 === 5 || number57 === 7) {
     break;
   }
 }
-console.log(number57)
+console.log(`prasisuko ${ciklas} ciklu, paskutinis skaicius ${number57}`)
 
