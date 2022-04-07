@@ -112,8 +112,14 @@ const nMetai = 5;
 // 10 uzd //
 console.log('-----------------');
 
-for (let i = 1; i <= 20; i++) {
-    { if (i % 4 === 0) 
-            console.log(`keliamieji metai: ${i}`);
-        }
-    } 
+for (let i = 1; i <= 2022; i++) {
+    if (i % 4 === 0 && i % 100 !== 0 && i % 400 !== 0) {
+        console.log(`keliamieji ${i}`);
+        }else{    if (i % 400 === 0) {
+                    console.log(`simtmecio keliamieji ${i}`);
+                }else{    if (i % 100 === 0 && i % 400 !== 0) {
+                        console.log(`NEkeliamieji simtmecio ${i}`);
+                        
+                   }
+            }
+    }}
